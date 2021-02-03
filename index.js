@@ -13,11 +13,6 @@ const decoder = require("saml-encoder-decoder-js");
 const parseString = require("xml2js").parseString;
 const stripPrefix = require("xml2js").processors.stripPrefix;
 
-mongoose.connect(
-  "mongodb://localhost:27017/samltest",
-  { useNewUrlParser: true }
-);
-
 app.use(
   express.urlencoded({
     extended: false
