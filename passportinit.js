@@ -29,9 +29,9 @@ passport.use(
 
 passport.use(
   new SamlStrategy({
-    callbackUrl: "https://afternoon-eyrie-32691.herokuapp.com/auth/passportsaml/callback",
+    callbackUrl: "https://dev-eventin-api.vcube.net/users/auth/saml/ieice/callback",
     entryPoint: "http://54.249.206.19:8080/auth/realms/dev-eventin/protocol/saml/",
-    issuer: "https://afternoon-eyrie-32691.herokuapp.com/",
+    issuer: "https://dev-eventin-api.vcube.net",
     identifierFormat: "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
     signatureAlgorithm: "sha256",
     privateCert: fs.readFileSync('./descyptionPvk.pem' , "utf-8"),
