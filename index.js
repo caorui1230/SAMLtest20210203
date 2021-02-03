@@ -1,6 +1,6 @@
 "use strict";
 
-const port = 3001;
+const PORT = process.env.PORT || 3001;
 const express = require("express");
 const app = express();
 const router = express.Router();
@@ -85,5 +85,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:3001)}`);
+  console.log(`Server running at http://localhost)}`);
 });
